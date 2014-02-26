@@ -13,6 +13,9 @@ public class Bytegenerator
 		double num1value, num2value, num3value, num4value, num5value, num6value, num7value, num8value, answer, input1 = 0;
 		String input = "";
 		Random generator = new Random();
+		//This is fine (below), but why not write a little loop
+		// you are doing the same operation repeatedly which is usually a good indication to use 
+		// a loop
 		num1 = Math.abs(generator.nextInt()) % 2;
 		num2 = Math.abs(generator.nextInt()) % 2;
 		num3 = Math.abs(generator.nextInt()) % 2;
@@ -21,7 +24,7 @@ public class Bytegenerator
 		num6 = Math.abs(generator.nextInt()) % 2;
 		num7 = Math.abs(generator.nextInt()) % 2;
 		num8 = Math.abs(generator.nextInt()) % 2;
-		
+		//same here, loop through 8 times to find each value (just a suggestion)
 		num1value = num1*Math.pow(2,0);
 		num2value = num2*Math.pow(2,1);
 		num3value = num3*Math.pow(2,2);
